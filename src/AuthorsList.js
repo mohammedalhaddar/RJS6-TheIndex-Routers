@@ -15,7 +15,7 @@ class AuthorsList extends Component {
       `${author.first_name} ${author.last_name}`.toLowerCase().includes(query)
     );
     this.setState({ filteredAuthors: filteredAuthors });
-  };
+  };  
 
   render() {
     const authorCards = this.state.filteredAuthors.map(author => (
